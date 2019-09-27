@@ -1,3 +1,4 @@
+import numpy as np
 """
 A1-Part-3: Python array indexing
 
@@ -23,10 +24,10 @@ def hopSamples(x,M):
     step = 0
     size = len(x)
 
-    output = []
+    output = np.array([])
 
     while (step < size):
-    	output.append(x[step])
+    	output = np.append(output, x[step])
     	step += M
 
     return output
